@@ -1,0 +1,19 @@
+# Secrets — never commit real keys
+.env
+
+# Editor swap/backup files (a .env.swp can leak secret contents)
+*.swp
+*.swo
+*~
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
+
+# Local cache of API responses (can be large; safe to delete)
+.cache/
+
+# Per-run output
+results/*.json

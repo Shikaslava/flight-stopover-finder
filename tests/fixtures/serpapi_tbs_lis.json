@@ -1,0 +1,1239 @@
+{
+  "search_metadata": {
+    "id": "6a390eff3b93e372a18bc103",
+    "status": "Success",
+    "json_endpoint": "https://serpapi.com/searches/t4B_HPVWGyCNIQY2wGWpGQ/6a390eff3b93e372a18bc103.json",
+    "created_at": "2026-06-22 10:31:27 UTC",
+    "processed_at": "2026-06-22 10:31:27 UTC",
+    "google_flights_url": "https://www.google.com/travel/flights?hl=en&gl=us&curr=USD&tfs=CBwQAhoeEgoyMDI2LTA5LTEyagcIARIDVEJTcgcIARIDTElTQAFIAXABmAEC&tfu=EgIIAQ",
+    "raw_html_file": "https://serpapi.com/searches/t4B_HPVWGyCNIQY2wGWpGQ/6a390eff3b93e372a18bc103.html",
+    "prettify_html_file": "https://serpapi.com/searches/t4B_HPVWGyCNIQY2wGWpGQ/6a390eff3b93e372a18bc103.prettify",
+    "total_time_taken": 2.59
+  },
+  "search_parameters": {
+    "engine": "google_flights",
+    "hl": "en",
+    "gl": "us",
+    "type": "2",
+    "departure_id": "TBS",
+    "arrival_id": "LIS",
+    "outbound_date": "2026-09-12",
+    "currency": "USD"
+  },
+  "best_flights": [
+    {
+      "flights": [
+        {
+          "departure_airport": {
+            "name": "Tbilisi International Airport",
+            "id": "TBS",
+            "time": "2026-09-12 04:35"
+          },
+          "arrival_airport": {
+            "name": "Athens International Airport \"Eleftherios Venizelos\"",
+            "id": "ATH",
+            "time": "2026-09-12 06:30"
+          },
+          "duration": 175,
+          "airplane": "Airbus A321neo",
+          "airline": "Aegean",
+          "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/A3.png",
+          "travel_class": "Economy",
+          "flight_number": "A3 897",
+          "legroom": "28 in",
+          "extensions": [
+            "Below average legroom (28 in)",
+            "In-seat USB outlet",
+            "Stream media to your device",
+            "Carbon emissions estimate: 139 kg"
+          ],
+          "overnight": true,
+          "often_delayed_by_over_30_min": true
+        },
+        {
+          "departure_airport": {
+            "name": "Athens International Airport \"Eleftherios Venizelos\"",
+            "id": "ATH",
+            "time": "2026-09-12 07:35"
+          },
+          "arrival_airport": {
+            "name": "Humberto Delgado Airport",
+            "id": "LIS",
+            "time": "2026-09-12 09:55"
+          },
+          "duration": 260,
+          "airplane": "Airbus A320neo",
+          "airline": "Aegean",
+          "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/A3.png",
+          "travel_class": "Economy",
+          "flight_number": "A3 720",
+          "legroom": "28 in",
+          "extensions": [
+            "Below average legroom (28 in)",
+            "Free Wi-Fi",
+            "In-seat USB outlet",
+            "Stream media to your device",
+            "Carbon emissions estimate: 204 kg"
+          ]
+        }
+      ],
+      "layovers": [
+        {
+          "duration": 65,
+          "name": "Athens International Airport \"Eleftherios Venizelos\"",
+          "id": "ATH"
+        }
+      ],
+      "total_duration": 500,
+      "carbon_emissions": {
+        "this_flight": 344000,
+        "typical_for_this_route": 382000,
+        "difference_percent": -10
+      },
+      "price": 266,
+      "type": "One way",
+      "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/A3.png",
+      "booking_token": "WyJDalJJVW1ZMFVrODBUR3RqV2xsQlUxOWlhbEZDUnkwdExTMHRMUzB0ZG5kaWFHTXhNVUZCUVVGQlIyODFSSGRCVG1aU01GTkJFZ3RCTXpnNU4zeEJNemN5TUJvTENMYlBBUkFDR2dOVlUwUTRISEMyendFPSIsW1siVEJTIiwiMjAyNi0wOS0xMiIsIkFUSCIsbnVsbCwiQTMiLCI4OTciXSxbIkFUSCIsIjIwMjYtMDktMTIiLCJMSVMiLG51bGwsIkEzIiwiNzIwIl1dXQ=="
+    },
+    {
+      "flights": [
+        {
+          "departure_airport": {
+            "name": "Tbilisi International Airport",
+            "id": "TBS",
+            "time": "2026-09-12 06:40"
+          },
+          "arrival_airport": {
+            "name": "Amsterdam Airport Schiphol",
+            "id": "AMS",
+            "time": "2026-09-12 09:40"
+          },
+          "duration": 300,
+          "airplane": "Boeing 737",
+          "airline": "Georgian Airways",
+          "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/A9.png",
+          "travel_class": "Economy",
+          "flight_number": "A9 651",
+          "ticket_also_sold_by": [
+            "KLM"
+          ],
+          "legroom": "30 in",
+          "extensions": [
+            "Average legroom (30 in)",
+            "Carbon emissions estimate: 381 kg"
+          ]
+        },
+        {
+          "departure_airport": {
+            "name": "Amsterdam Airport Schiphol",
+            "id": "AMS",
+            "time": "2026-09-12 12:30"
+          },
+          "arrival_airport": {
+            "name": "Humberto Delgado Airport",
+            "id": "LIS",
+            "time": "2026-09-12 14:35"
+          },
+          "duration": 185,
+          "airplane": "Airbus A321neo",
+          "airline": "KLM",
+          "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/KL.png",
+          "travel_class": "Economy",
+          "flight_number": "KL 1583",
+          "legroom": "29 in",
+          "extensions": [
+            "Below average legroom (29 in)",
+            "Free Wi-Fi",
+            "In-seat USB outlet",
+            "Carbon emissions estimate: 120 kg"
+          ]
+        }
+      ],
+      "layovers": [
+        {
+          "duration": 170,
+          "name": "Amsterdam Airport Schiphol",
+          "id": "AMS"
+        }
+      ],
+      "total_duration": 655,
+      "carbon_emissions": {
+        "this_flight": 501000,
+        "typical_for_this_route": 382000,
+        "difference_percent": 31
+      },
+      "price": 352,
+      "type": "One way",
+      "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/multi.png",
+      "booking_token": "WyJDalJJVW1ZMFVrODBUR3RqV2xsQlUxOWlhbEZDUnkwdExTMHRMUzB0ZG5kaWFHTXhNVUZCUVVGQlIyODFSSGRCVG1aU01GTkJFZ3hCT1RZMU1YeExUREUxT0RNYUN3anhrZ0lRQWhvRFZWTkVPQnh3OFpJQyIsW1siVEJTIiwiMjAyNi0wOS0xMiIsIkFNUyIsbnVsbCwiQTkiLCI2NTEiXSxbIkFNUyIsIjIwMjYtMDktMTIiLCJMSVMiLG51bGwsIktMIiwiMTU4MyJdXV0="
+    },
+    {
+      "flights": [
+        {
+          "departure_airport": {
+            "name": "Tbilisi International Airport",
+            "id": "TBS",
+            "time": "2026-09-12 03:10"
+          },
+          "arrival_airport": {
+            "name": "Istanbul Airport",
+            "id": "IST",
+            "time": "2026-09-12 04:40"
+          },
+          "duration": 150,
+          "airplane": "Boeing 737",
+          "airline": "Turkish Airlines",
+          "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/TK.png",
+          "travel_class": "Economy",
+          "flight_number": "TK 387",
+          "legroom": "33 in",
+          "extensions": [
+            "Above average legroom (33 in)",
+            "Wi-Fi for a fee",
+            "On-demand video",
+            "Carbon emissions estimate: 148 kg"
+          ],
+          "overnight": true
+        },
+        {
+          "departure_airport": {
+            "name": "Istanbul Airport",
+            "id": "IST",
+            "time": "2026-09-12 06:55"
+          },
+          "arrival_airport": {
+            "name": "Humberto Delgado Airport",
+            "id": "LIS",
+            "time": "2026-09-12 09:55"
+          },
+          "duration": 300,
+          "airplane": "Airbus A321neo",
+          "airline": "Turkish Airlines",
+          "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/TK.png",
+          "travel_class": "Economy",
+          "flight_number": "TK 1755",
+          "legroom": "30 in",
+          "extensions": [
+            "Average legroom (30 in)",
+            "Wi-Fi for a fee",
+            "In-seat USB outlet",
+            "On-demand video",
+            "Carbon emissions estimate: 244 kg"
+          ]
+        }
+      ],
+      "layovers": [
+        {
+          "duration": 135,
+          "name": "Istanbul Airport",
+          "id": "IST",
+          "overnight": true
+        }
+      ],
+      "total_duration": 585,
+      "carbon_emissions": {
+        "this_flight": 393000,
+        "typical_for_this_route": 382000,
+        "difference_percent": 3
+      },
+      "price": 535,
+      "type": "One way",
+      "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/TK.png",
+      "booking_token": "WyJDalJJVW1ZMFVrODBUR3RqV2xsQlUxOWlhbEZDUnkwdExTMHRMUzB0ZG5kaWFHTXhNVUZCUVVGQlIyODFSSGRCVG1aU01GTkJFZ3hVU3pNNE4zeFVTekUzTlRVYUN3ajJvUU1RQWhvRFZWTkVPQnh3OXFFRCIsW1siVEJTIiwiMjAyNi0wOS0xMiIsIklTVCIsbnVsbCwiVEsiLCIzODciXSxbIklTVCIsIjIwMjYtMDktMTIiLCJMSVMiLG51bGwsIlRLIiwiMTc1NSJdXV0="
+    }
+  ],
+  "other_flights": [
+    {
+      "flights": [
+        {
+          "departure_airport": {
+            "name": "Tbilisi International Airport",
+            "id": "TBS",
+            "time": "2026-09-12 06:40"
+          },
+          "arrival_airport": {
+            "name": "Amsterdam Airport Schiphol",
+            "id": "AMS",
+            "time": "2026-09-12 09:40"
+          },
+          "duration": 300,
+          "airplane": "Boeing 737",
+          "airline": "Georgian Airways",
+          "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/A9.png",
+          "travel_class": "Economy",
+          "flight_number": "A9 651",
+          "ticket_also_sold_by": [
+            "KLM"
+          ],
+          "legroom": "30 in",
+          "extensions": [
+            "Average legroom (30 in)",
+            "Carbon emissions estimate: 381 kg"
+          ]
+        },
+        {
+          "departure_airport": {
+            "name": "Amsterdam Airport Schiphol",
+            "id": "AMS",
+            "time": "2026-09-12 20:50"
+          },
+          "arrival_airport": {
+            "name": "Humberto Delgado Airport",
+            "id": "LIS",
+            "time": "2026-09-12 22:50"
+          },
+          "duration": 180,
+          "airplane": "Airbus A321neo",
+          "airline": "KLM",
+          "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/KL.png",
+          "travel_class": "Economy",
+          "flight_number": "KL 1587",
+          "legroom": "29 in",
+          "extensions": [
+            "Below average legroom (29 in)",
+            "Free Wi-Fi",
+            "In-seat USB outlet",
+            "Carbon emissions estimate: 120 kg"
+          ],
+          "often_delayed_by_over_30_min": true
+        }
+      ],
+      "layovers": [
+        {
+          "duration": 670,
+          "name": "Amsterdam Airport Schiphol",
+          "id": "AMS"
+        }
+      ],
+      "total_duration": 1150,
+      "carbon_emissions": {
+        "this_flight": 501000,
+        "typical_for_this_route": 382000,
+        "difference_percent": 31
+      },
+      "price": 269,
+      "type": "One way",
+      "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/multi.png",
+      "booking_token": "WyJDalJJVW1ZMFVrODBUR3RqV2xsQlUxOWlhbEZDUnkwdExTMHRMUzB0ZG5kaWFHTXhNVUZCUVVGQlIyODFSSGRCVG1aU01GTkJFZ3hCT1RZMU1YeExUREUxT0RjYUN3akQwUUVRQWhvRFZWTkVPQnh3dzlFQiIsW1siVEJTIiwiMjAyNi0wOS0xMiIsIkFNUyIsbnVsbCwiQTkiLCI2NTEiXSxbIkFNUyIsIjIwMjYtMDktMTIiLCJMSVMiLG51bGwsIktMIiwiMTU4NyJdXV0="
+    },
+    {
+      "flights": [
+        {
+          "departure_airport": {
+            "name": "Tbilisi International Airport",
+            "id": "TBS",
+            "time": "2026-09-12 06:40"
+          },
+          "arrival_airport": {
+            "name": "Amsterdam Airport Schiphol",
+            "id": "AMS",
+            "time": "2026-09-12 09:40"
+          },
+          "duration": 300,
+          "airplane": "Boeing 737",
+          "airline": "Georgian Airways",
+          "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/A9.png",
+          "travel_class": "Economy",
+          "flight_number": "A9 651",
+          "ticket_also_sold_by": [
+            "KLM"
+          ],
+          "legroom": "30 in",
+          "extensions": [
+            "Average legroom (30 in)",
+            "Carbon emissions estimate: 381 kg"
+          ]
+        },
+        {
+          "departure_airport": {
+            "name": "Amsterdam Airport Schiphol",
+            "id": "AMS",
+            "time": "2026-09-12 16:40"
+          },
+          "arrival_airport": {
+            "name": "Humberto Delgado Airport",
+            "id": "LIS",
+            "time": "2026-09-12 18:45"
+          },
+          "duration": 185,
+          "airplane": "Airbus A321neo",
+          "airline": "KLM",
+          "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/KL.png",
+          "travel_class": "Economy",
+          "flight_number": "KL 1585",
+          "legroom": "29 in",
+          "extensions": [
+            "Below average legroom (29 in)",
+            "Free Wi-Fi",
+            "In-seat USB outlet",
+            "Carbon emissions estimate: 120 kg"
+          ]
+        }
+      ],
+      "layovers": [
+        {
+          "duration": 420,
+          "name": "Amsterdam Airport Schiphol",
+          "id": "AMS"
+        }
+      ],
+      "total_duration": 905,
+      "carbon_emissions": {
+        "this_flight": 501000,
+        "typical_for_this_route": 382000,
+        "difference_percent": 31
+      },
+      "price": 288,
+      "type": "One way",
+      "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/multi.png",
+      "booking_token": "WyJDalJJVW1ZMFVrODBUR3RqV2xsQlUxOWlhbEZDUnkwdExTMHRMUzB0ZG5kaWFHTXhNVUZCUVVGQlIyODFSSGRCVG1aU01GTkJFZ3hCT1RZMU1YeExUREUxT0RVYUN3amY0QUVRQWhvRFZWTkVPQnh3MytBQiIsW1siVEJTIiwiMjAyNi0wOS0xMiIsIkFNUyIsbnVsbCwiQTkiLCI2NTEiXSxbIkFNUyIsIjIwMjYtMDktMTIiLCJMSVMiLG51bGwsIktMIiwiMTU4NSJdXV0="
+    },
+    {
+      "flights": [
+        {
+          "departure_airport": {
+            "name": "Tbilisi International Airport",
+            "id": "TBS",
+            "time": "2026-09-12 05:25"
+          },
+          "arrival_airport": {
+            "name": "Warsaw Frederic Chopin",
+            "id": "WAW",
+            "time": "2026-09-12 07:20"
+          },
+          "duration": 235,
+          "airplane": "Boeing 737MAX 8 Passenger",
+          "airline": "LOT",
+          "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/LO.png",
+          "travel_class": "Economy",
+          "flight_number": "LO 726",
+          "legroom": "29 in",
+          "extensions": [
+            "Below average legroom (29 in)",
+            "In-seat power & USB outlets",
+            "Carbon emissions estimate: 168 kg"
+          ]
+        },
+        {
+          "departure_airport": {
+            "name": "Warsaw Frederic Chopin",
+            "id": "WAW",
+            "time": "2026-09-13 06:20"
+          },
+          "arrival_airport": {
+            "name": "Humberto Delgado Airport",
+            "id": "LIS",
+            "time": "2026-09-13 09:40"
+          },
+          "duration": 260,
+          "airplane": "Boeing 737MAX 8 Passenger",
+          "airline": "LOT",
+          "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/LO.png",
+          "travel_class": "Economy",
+          "flight_number": "LO 425",
+          "legroom": "29 in",
+          "extensions": [
+            "Below average legroom (29 in)",
+            "In-seat power & USB outlets",
+            "Carbon emissions estimate: 191 kg"
+          ]
+        }
+      ],
+      "layovers": [
+        {
+          "duration": 1380,
+          "name": "Warsaw Frederic Chopin",
+          "id": "WAW",
+          "overnight": true
+        }
+      ],
+      "total_duration": 1875,
+      "carbon_emissions": {
+        "this_flight": 360000,
+        "typical_for_this_route": 382000,
+        "difference_percent": -6
+      },
+      "price": 369,
+      "type": "One way",
+      "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/LO.png",
+      "booking_token": "WyJDalJJVW1ZMFVrODBUR3RqV2xsQlUxOWlhbEZDUnkwdExTMHRMUzB0ZG5kaWFHTXhNVUZCUVVGQlIyODFSSGRCVG1aU01GTkJFZ3RNVHpjeU5ueE1UelF5TlJvTENKQ2dBaEFDR2dOVlUwUTRISENRb0FJPSIsW1siVEJTIiwiMjAyNi0wOS0xMiIsIldBVyIsbnVsbCwiTE8iLCI3MjYiXSxbIldBVyIsIjIwMjYtMDktMTMiLCJMSVMiLG51bGwsIkxPIiwiNDI1Il1dXQ=="
+    },
+    {
+      "flights": [
+        {
+          "departure_airport": {
+            "name": "Tbilisi International Airport",
+            "id": "TBS",
+            "time": "2026-09-12 12:20"
+          },
+          "arrival_airport": {
+            "name": "Istanbul Airport",
+            "id": "IST",
+            "time": "2026-09-12 14:00"
+          },
+          "duration": 160,
+          "airplane": "Boeing 737",
+          "airline": "Turkish Airlines",
+          "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/TK.png",
+          "travel_class": "Economy",
+          "flight_number": "TK 381",
+          "legroom": "31 in",
+          "extensions": [
+            "Average legroom (31 in)",
+            "Wi-Fi for a fee",
+            "In-seat USB outlet",
+            "On-demand video",
+            "Carbon emissions estimate: 140 kg"
+          ]
+        },
+        {
+          "departure_airport": {
+            "name": "Istanbul Airport",
+            "id": "IST",
+            "time": "2026-09-13 06:50"
+          },
+          "arrival_airport": {
+            "name": "Humberto Delgado Airport",
+            "id": "LIS",
+            "time": "2026-09-13 09:50"
+          },
+          "duration": 300,
+          "airplane": "Airbus A321neo",
+          "airline": "Turkish Airlines",
+          "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/TK.png",
+          "travel_class": "Economy",
+          "flight_number": "TK 1755",
+          "legroom": "30 in",
+          "extensions": [
+            "Average legroom (30 in)",
+            "Wi-Fi for a fee",
+            "In-seat USB outlet",
+            "On-demand video",
+            "Carbon emissions estimate: 244 kg"
+          ]
+        }
+      ],
+      "layovers": [
+        {
+          "duration": 1010,
+          "name": "Istanbul Airport",
+          "id": "IST",
+          "overnight": true
+        }
+      ],
+      "total_duration": 1470,
+      "carbon_emissions": {
+        "this_flight": 385000,
+        "typical_for_this_route": 382000,
+        "difference_percent": 1
+      },
+      "price": 404,
+      "type": "One way",
+      "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/TK.png",
+      "booking_token": "WyJDalJJVW1ZMFVrODBUR3RqV2xsQlUxOWlhbEZDUnkwdExTMHRMUzB0ZG5kaWFHTXhNVUZCUVVGQlIyODFSSGRCVG1aU01GTkJFZ3hVU3pNNE1YeFVTekUzTlRVYUN3ak91d0lRQWhvRFZWTkVPQnh3enJzQyIsW1siVEJTIiwiMjAyNi0wOS0xMiIsIklTVCIsbnVsbCwiVEsiLCIzODEiXSxbIklTVCIsIjIwMjYtMDktMTMiLCJMSVMiLG51bGwsIlRLIiwiMTc1NSJdXV0="
+    },
+    {
+      "flights": [
+        {
+          "departure_airport": {
+            "name": "Tbilisi International Airport",
+            "id": "TBS",
+            "time": "2026-09-12 02:15"
+          },
+          "arrival_airport": {
+            "name": "Chi\u0219in\u0103u International Airport",
+            "id": "RMO",
+            "time": "2026-09-12 04:15"
+          },
+          "duration": 180,
+          "airplane": "Airbus A320",
+          "airline": "FLYONE",
+          "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/5F.png",
+          "travel_class": "Economy",
+          "flight_number": "5F 5582",
+          "legroom": "28 in",
+          "extensions": [
+            "Below average legroom (28 in)",
+            "Carbon emissions estimate: 127 kg"
+          ],
+          "overnight": true
+        },
+        {
+          "departure_airport": {
+            "name": "Chi\u0219in\u0103u International Airport",
+            "id": "RMO",
+            "time": "2026-09-12 19:10"
+          },
+          "arrival_airport": {
+            "name": "Humberto Delgado Airport",
+            "id": "LIS",
+            "time": "2026-09-12 22:00"
+          },
+          "duration": 290,
+          "airplane": "Airbus A321",
+          "airline": "FLYONE",
+          "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/5F.png",
+          "travel_class": "Economy",
+          "flight_number": "5F 5811",
+          "legroom": "28 in",
+          "extensions": [
+            "Below average legroom (28 in)",
+            "Carbon emissions estimate: 272 kg"
+          ]
+        }
+      ],
+      "layovers": [
+        {
+          "duration": 895,
+          "name": "Chi\u0219in\u0103u International Airport",
+          "id": "RMO",
+          "overnight": true
+        }
+      ],
+      "total_duration": 1365,
+      "carbon_emissions": {
+        "this_flight": 399000,
+        "typical_for_this_route": 382000,
+        "difference_percent": 4
+      },
+      "price": 424,
+      "type": "One way",
+      "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/5F.png",
+      "booking_token": "WyJDalJJVW1ZMFVrODBUR3RqV2xsQlUxOWlhbEZDUnkwdExTMHRMUzB0ZG5kaWFHTXhNVUZCUVVGQlIyODFSSGRCVG1aU01GTkJFZzAxUmpVMU9ESjhOVVkxT0RFeEdnc0kzc29DRUFJYUExVlRSRGdjY043S0FnPT0iLFtbIlRCUyIsIjIwMjYtMDktMTIiLCJSTU8iLG51bGwsIjVGIiwiNTU4MiJdLFsiUk1PIiwiMjAyNi0wOS0xMiIsIkxJUyIsbnVsbCwiNUYiLCI1ODExIl1dXQ=="
+    },
+    {
+      "flights": [
+        {
+          "departure_airport": {
+            "name": "Tbilisi International Airport",
+            "id": "TBS",
+            "time": "2026-09-12 05:25"
+          },
+          "arrival_airport": {
+            "name": "Warsaw Frederic Chopin",
+            "id": "WAW",
+            "time": "2026-09-12 07:20"
+          },
+          "duration": 235,
+          "airplane": "Boeing 737MAX 8 Passenger",
+          "airline": "LOT",
+          "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/LO.png",
+          "travel_class": "Economy",
+          "flight_number": "LO 726",
+          "legroom": "29 in",
+          "extensions": [
+            "Below average legroom (29 in)",
+            "In-seat power & USB outlets",
+            "Carbon emissions estimate: 168 kg"
+          ]
+        },
+        {
+          "departure_airport": {
+            "name": "Warsaw Frederic Chopin",
+            "id": "WAW",
+            "time": "2026-09-12 13:40"
+          },
+          "arrival_airport": {
+            "name": "Humberto Delgado Airport",
+            "id": "LIS",
+            "time": "2026-09-12 17:00"
+          },
+          "duration": 260,
+          "airplane": "Boeing 737MAX 8 Passenger",
+          "airline": "LOT",
+          "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/LO.png",
+          "travel_class": "Economy",
+          "flight_number": "LO 425",
+          "legroom": "29 in",
+          "extensions": [
+            "Below average legroom (29 in)",
+            "In-seat power & USB outlets",
+            "Carbon emissions estimate: 191 kg"
+          ]
+        }
+      ],
+      "layovers": [
+        {
+          "duration": 380,
+          "name": "Warsaw Frederic Chopin",
+          "id": "WAW"
+        }
+      ],
+      "total_duration": 875,
+      "carbon_emissions": {
+        "this_flight": 360000,
+        "typical_for_this_route": 382000,
+        "difference_percent": -6
+      },
+      "price": 433,
+      "type": "One way",
+      "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/LO.png",
+      "booking_token": "WyJDalJJVW1ZMFVrODBUR3RqV2xsQlUxOWlhbEZDUnkwdExTMHRMUzB0ZG5kaWFHTXhNVUZCUVVGQlIyODFSSGRCVG1aU01GTkJFZzFNVHpjeU5ueE1UelF5TlNNeEdnc0l6ZEVDRUFJYUExVlRSRGdjY00zUkFnPT0iLFtbIlRCUyIsIjIwMjYtMDktMTIiLCJXQVciLG51bGwsIkxPIiwiNzI2Il0sWyJXQVciLCIyMDI2LTA5LTEyIiwiTElTIixudWxsLCJMTyIsIjQyNSJdXV0="
+    },
+    {
+      "flights": [
+        {
+          "departure_airport": {
+            "name": "Tbilisi International Airport",
+            "id": "TBS",
+            "time": "2026-09-12 06:45"
+          },
+          "arrival_airport": {
+            "name": "Istanbul Airport",
+            "id": "IST",
+            "time": "2026-09-12 08:20"
+          },
+          "duration": 155,
+          "airplane": "Boeing 737",
+          "airline": "Turkish Airlines",
+          "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/TK.png",
+          "travel_class": "Economy",
+          "flight_number": "TK 377",
+          "legroom": "31 in",
+          "extensions": [
+            "Average legroom (31 in)",
+            "Wi-Fi for a fee",
+            "In-seat USB outlet",
+            "On-demand video",
+            "Carbon emissions estimate: 140 kg"
+          ]
+        },
+        {
+          "departure_airport": {
+            "name": "Istanbul Airport",
+            "id": "IST",
+            "time": "2026-09-12 12:45"
+          },
+          "arrival_airport": {
+            "name": "Humberto Delgado Airport",
+            "id": "LIS",
+            "time": "2026-09-12 15:35"
+          },
+          "duration": 290,
+          "airplane": "Airbus A330",
+          "airline": "Turkish Airlines",
+          "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/TK.png",
+          "travel_class": "Economy",
+          "flight_number": "TK 1759",
+          "legroom": "31 in",
+          "extensions": [
+            "Average legroom (31 in)",
+            "Wi-Fi for a fee",
+            "In-seat power & USB outlets",
+            "On-demand video",
+            "Carbon emissions estimate: 224 kg"
+          ]
+        }
+      ],
+      "layovers": [
+        {
+          "duration": 265,
+          "name": "Istanbul Airport",
+          "id": "IST"
+        }
+      ],
+      "total_duration": 710,
+      "carbon_emissions": {
+        "this_flight": 364000,
+        "typical_for_this_route": 382000,
+        "difference_percent": -5
+      },
+      "price": 512,
+      "type": "One way",
+      "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/TK.png",
+      "booking_token": "WyJDalJJVW1ZMFVrODBUR3RqV2xsQlUxOWlhbEZDUnkwdExTMHRMUzB0ZG5kaWFHTXhNVUZCUVVGQlIyODFSSGRCVG1aU01GTkJFZ3hVU3pNM04zeFVTekUzTlRrYUN3alNqd01RQWhvRFZWTkVPQnh3MG84RCIsW1siVEJTIiwiMjAyNi0wOS0xMiIsIklTVCIsbnVsbCwiVEsiLCIzNzciXSxbIklTVCIsIjIwMjYtMDktMTIiLCJMSVMiLG51bGwsIlRLIiwiMTc1OSJdXV0="
+    },
+    {
+      "flights": [
+        {
+          "departure_airport": {
+            "name": "Tbilisi International Airport",
+            "id": "TBS",
+            "time": "2026-09-12 05:00"
+          },
+          "arrival_airport": {
+            "name": "Munich International Airport",
+            "id": "MUC",
+            "time": "2026-09-12 07:15"
+          },
+          "duration": 255,
+          "airplane": "Airbus A321neo",
+          "airline": "Lufthansa",
+          "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/LH.png",
+          "travel_class": "Economy",
+          "flight_number": "LH 2559",
+          "legroom": "29 in",
+          "extensions": [
+            "Below average legroom (29 in)",
+            "In-seat USB outlet",
+            "Carbon emissions estimate: 193 kg"
+          ]
+        },
+        {
+          "departure_airport": {
+            "name": "Munich International Airport",
+            "id": "MUC",
+            "time": "2026-09-12 08:20"
+          },
+          "arrival_airport": {
+            "name": "Francisco S\u00e1 Carneiro Airport",
+            "id": "OPO",
+            "time": "2026-09-12 10:20"
+          },
+          "duration": 180,
+          "airplane": "Airbus A320",
+          "airline": "Lufthansa",
+          "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/LH.png",
+          "travel_class": "Economy",
+          "flight_number": "LH 1782",
+          "legroom": "29 in",
+          "extensions": [
+            "Below average legroom (29 in)",
+            "In-seat USB outlet",
+            "Carbon emissions estimate: 153 kg"
+          ]
+        },
+        {
+          "departure_airport": {
+            "name": "Francisco S\u00e1 Carneiro Airport",
+            "id": "OPO",
+            "time": "2026-09-12 12:00"
+          },
+          "arrival_airport": {
+            "name": "Humberto Delgado Airport",
+            "id": "LIS",
+            "time": "2026-09-12 12:55"
+          },
+          "duration": 55,
+          "airplane": "Embraer 190",
+          "airline": "Tap Air Portugal",
+          "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/TP.png",
+          "travel_class": "Economy",
+          "flight_number": "TP 1927",
+          "ticket_also_sold_by": [
+            "Lufthansa"
+          ],
+          "legroom": "31 in",
+          "extensions": [
+            "Average legroom (31 in)",
+            "Carbon emissions estimate: 60 kg"
+          ],
+          "often_delayed_by_over_30_min": true,
+          "plane_and_crew_by": "Portugalia for Tap Portugal"
+        }
+      ],
+      "layovers": [
+        {
+          "duration": 65,
+          "name": "Munich International Airport",
+          "id": "MUC"
+        },
+        {
+          "duration": 100,
+          "name": "Francisco S\u00e1 Carneiro Airport",
+          "id": "OPO"
+        }
+      ],
+      "total_duration": 655,
+      "carbon_emissions": {
+        "this_flight": 407000,
+        "typical_for_this_route": 382000,
+        "difference_percent": 7
+      },
+      "price": 789,
+      "type": "One way",
+      "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/multi.png",
+      "booking_token": "WyJDalJJVW1ZMFVrODBUR3RqV2xsQlUxOWlhbEZDUnkwdExTMHRMUzB0ZG5kaWFHTXhNVUZCUVVGQlIyODFSSGRCVG1aU01GTkJFaFJNU0RJMU5UbDhURWd4TnpneWZGUlFNVGt5TnhvTENPTG5CQkFDR2dOVlUwUTRISERpNXdRPSIsW1siVEJTIiwiMjAyNi0wOS0xMiIsIk1VQyIsbnVsbCwiTEgiLCIyNTU5Il0sWyJNVUMiLCIyMDI2LTA5LTEyIiwiT1BPIixudWxsLCJMSCIsIjE3ODIiXSxbIk9QTyIsIjIwMjYtMDktMTIiLCJMSVMiLG51bGwsIlRQIiwiMTkyNyJdXV0="
+    },
+    {
+      "flights": [
+        {
+          "departure_airport": {
+            "name": "Tbilisi International Airport",
+            "id": "TBS",
+            "time": "2026-09-12 04:50"
+          },
+          "arrival_airport": {
+            "name": "Vienna International Airport",
+            "id": "VIE",
+            "time": "2026-09-12 06:30"
+          },
+          "duration": 220,
+          "airplane": "Airbus A320",
+          "airline": "Austrian",
+          "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/OS.png",
+          "travel_class": "Economy",
+          "flight_number": "OS 908",
+          "legroom": "28 in",
+          "extensions": [
+            "Below average legroom (28 in)",
+            "In-seat USB outlet",
+            "Carbon emissions estimate: 189 kg"
+          ],
+          "overnight": true
+        },
+        {
+          "departure_airport": {
+            "name": "Vienna International Airport",
+            "id": "VIE",
+            "time": "2026-09-12 09:25"
+          },
+          "arrival_airport": {
+            "name": "Munich International Airport",
+            "id": "MUC",
+            "time": "2026-09-12 10:25"
+          },
+          "duration": 60,
+          "airplane": "Airbus A320",
+          "airline": "Austrian",
+          "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/OS.png",
+          "travel_class": "Economy",
+          "flight_number": "OS 183",
+          "legroom": "28 in",
+          "extensions": [
+            "Below average legroom (28 in)",
+            "In-seat USB outlet",
+            "Carbon emissions estimate: 53 kg"
+          ]
+        },
+        {
+          "departure_airport": {
+            "name": "Munich International Airport",
+            "id": "MUC",
+            "time": "2026-09-12 11:15"
+          },
+          "arrival_airport": {
+            "name": "Humberto Delgado Airport",
+            "id": "LIS",
+            "time": "2026-09-12 13:40"
+          },
+          "duration": 205,
+          "airplane": "Airbus A321neo",
+          "airline": "Lufthansa",
+          "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/LH.png",
+          "travel_class": "Economy",
+          "flight_number": "LH 1778",
+          "ticket_also_sold_by": [
+            "Austrian"
+          ],
+          "legroom": "29 in",
+          "extensions": [
+            "Below average legroom (29 in)",
+            "In-seat USB outlet",
+            "Carbon emissions estimate: 147 kg"
+          ]
+        }
+      ],
+      "layovers": [
+        {
+          "duration": 175,
+          "name": "Vienna International Airport",
+          "id": "VIE"
+        },
+        {
+          "duration": 50,
+          "name": "Munich International Airport",
+          "id": "MUC"
+        }
+      ],
+      "total_duration": 710,
+      "carbon_emissions": {
+        "this_flight": 390000,
+        "typical_for_this_route": 382000,
+        "difference_percent": 2
+      },
+      "price": 871,
+      "type": "One way",
+      "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/multi.png",
+      "booking_token": "WyJDalJJVW1ZMFVrODBUR3RqV2xsQlUxOWlhbEZDUnkwdExTMHRMUzB0ZG5kaWFHTXhNVUZCUVVGQlIyODFSSGRCVG1aU01GTkJFaEpQVXprd09IeFBVekU0TTN4TVNERTNOemdhQ3dpNnFBVVFBaG9EVlZORU9CeHd1cWdGIixbWyJUQlMiLCIyMDI2LTA5LTEyIiwiVklFIixudWxsLCJPUyIsIjkwOCJdLFsiVklFIiwiMjAyNi0wOS0xMiIsIk1VQyIsbnVsbCwiT1MiLCIxODMiXSxbIk1VQyIsIjIwMjYtMDktMTIiLCJMSVMiLG51bGwsIkxIIiwiMTc3OCJdXV0="
+    }
+  ],
+  "price_insights": {
+    "lowest_price": 266,
+    "price_level": "low",
+    "typical_price_range": [
+      270,
+      465
+    ],
+    "price_history": [
+      [
+        1776801600,
+        382
+      ],
+      [
+        1776888000,
+        380
+      ],
+      [
+        1776974400,
+        379
+      ],
+      [
+        1777060800,
+        379
+      ],
+      [
+        1777147200,
+        379
+      ],
+      [
+        1777233600,
+        379
+      ],
+      [
+        1777320000,
+        379
+      ],
+      [
+        1777406400,
+        366
+      ],
+      [
+        1777492800,
+        364
+      ],
+      [
+        1777579200,
+        365
+      ],
+      [
+        1777665600,
+        366
+      ],
+      [
+        1777752000,
+        366
+      ],
+      [
+        1777838400,
+        321
+      ],
+      [
+        1777924800,
+        321
+      ],
+      [
+        1778011200,
+        319
+      ],
+      [
+        1778097600,
+        319
+      ],
+      [
+        1778184000,
+        322
+      ],
+      [
+        1778270400,
+        322
+      ],
+      [
+        1778356800,
+        322
+      ],
+      [
+        1778443200,
+        322
+      ],
+      [
+        1778529600,
+        322
+      ],
+      [
+        1778616000,
+        322
+      ],
+      [
+        1778702400,
+        322
+      ],
+      [
+        1778788800,
+        321
+      ],
+      [
+        1778875200,
+        319
+      ],
+      [
+        1778961600,
+        319
+      ],
+      [
+        1779048000,
+        319
+      ],
+      [
+        1779134400,
+        318
+      ],
+      [
+        1779220800,
+        320
+      ],
+      [
+        1779307200,
+        318
+      ],
+      [
+        1779393600,
+        317
+      ],
+      [
+        1779480000,
+        320
+      ],
+      [
+        1779566400,
+        320
+      ],
+      [
+        1779652800,
+        243
+      ],
+      [
+        1779739200,
+        243
+      ],
+      [
+        1779825600,
+        243
+      ],
+      [
+        1779912000,
+        226
+      ],
+      [
+        1779998400,
+        227
+      ],
+      [
+        1780084800,
+        229
+      ],
+      [
+        1780171200,
+        230
+      ],
+      [
+        1780257600,
+        229
+      ],
+      [
+        1780344000,
+        228
+      ],
+      [
+        1780430400,
+        236
+      ],
+      [
+        1780516800,
+        253
+      ],
+      [
+        1780603200,
+        251
+      ],
+      [
+        1780689600,
+        251
+      ],
+      [
+        1780776000,
+        249
+      ],
+      [
+        1780862400,
+        231
+      ],
+      [
+        1780948800,
+        235
+      ],
+      [
+        1781035200,
+        235
+      ],
+      [
+        1781121600,
+        234
+      ],
+      [
+        1781208000,
+        235
+      ],
+      [
+        1781294400,
+        233
+      ],
+      [
+        1781380800,
+        235
+      ],
+      [
+        1781467200,
+        235
+      ],
+      [
+        1781553600,
+        234
+      ],
+      [
+        1781640000,
+        235
+      ],
+      [
+        1781726400,
+        233
+      ],
+      [
+        1781812800,
+        233
+      ],
+      [
+        1781899200,
+        233
+      ],
+      [
+        1781985600,
+        233
+      ],
+      [
+        1782072000,
+        266
+      ]
+    ]
+  },
+  "airports": [
+    {
+      "departure": [
+        {
+          "airport": {
+            "id": "TBS",
+            "name": "Tbilisi International Airport"
+          },
+          "city": "Tbilisi",
+          "country": "Georgia",
+          "country_code": "GE",
+          "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQiRaKF3HcwAd9JDME-lcEdo53DDlCyQwSFd0-F4OWnXJUj5ro3lY6LFRHXGK5wKhsAQGKZ-_XlSPEA5g",
+          "thumbnail": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRptCiSHNzsQbNV-XblFekSMmk0WFjG44W3zso2QeVqS1JsQYL0VteWBABDVwEiEMqpumBLOoU71855va1NZHHaDsNt2oLzvjIv_ACrNQU"
+        }
+      ],
+      "arrival": [
+        {
+          "airport": {
+            "id": "LIS",
+            "name": "Humberto Delgado Airport"
+          },
+          "city": "Lisbon",
+          "country": "Portugal",
+          "country_code": "PT",
+          "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQLxT3PIh1TwnGsLrG7G-JQRFMG0zIp4uiQ71FTwf1WQHKROUG_veOYAiGQTLGO36g5OCdu9DUrwHrzaA",
+          "thumbnail": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSG3-nF1u-sTIpnrbZ3a_ly_OcwqDxS9MCOGoiQTX3dJ3ZoIiUsVHqxHC-nmruwZ8aoJZJPM7O5YSmsHR6tp2L_EHV4CnsiNtatHuedKBE"
+        }
+      ]
+    }
+  ]
+}

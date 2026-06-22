@@ -1,0 +1,20 @@
+{
+  "data_source": "serpapi",
+  "currency": "USD",
+
+  "candidate_source": "static",
+  "candidates": ["IST", "ATH", "VIE", "FCO", "CDG"],
+
+  "taste": "food, walkable old towns, near the sea, not too touristy",
+  "llm_candidate_count": 6,
+  "llm_model": "gemini-2.5-flash",
+
+  "min_nights_in_C": 3,
+
+  "ranker": "by_price",
+
+  "filters": [
+    { "name": "max_stops", "params": { "max": 1 } },
+    { "name": "earliest_departure", "params": { "not_before": "07:00" } }
+  ]
+}
