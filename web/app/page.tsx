@@ -1,6 +1,7 @@
 "use client";
 
-import { useMemo, useState } from "react";
+import { useEffect, useMemo, useState } from "react";
+import { AirportAutocomplete, type Airport } from "./AirportAutocomplete";
 
 /* ------------------------------------------------------------------ *
  * Detour — flight stopover finder UI (ported from Detour.dc.html).
@@ -61,6 +62,8 @@ const COUNTRY: Record<string, string> = {
   SOF: "Bulgaria", MXP: "Italy", FRA: "Germany", CPH: "Denmark", HEL: "Finland",
   DOH: "Qatar", TLV: "Israel",
 };
+// Offline fallback if /airports.json fails to load; the full ~4.5k dataset replaces it.
+const FALLBACK_AIRPORTS: Airport[] = AIRPORTS.map((a) => ({ code: a.code, city: a.name, country: COUNTRY[a.code] ?? "" }));
 const PHOTOS: Record<string, string> = {
   IST: "https://images.unsplash.com/photo-1541432901042-2d8bd64b4a9b?w=400&q=70",
   ATH: "https://images.unsplash.com/photo-1555993539-1732b0258235?w=400&q=70",
@@ -125,7 +128,7 @@ function legMeta(l: Leg): string {
   const stops = l.stops === 0 ? "nonstop" : `${l.stops} stop`;
   return `${l.dateLabel} · ${stops} · ${fmtDur(l.durMin)} · ${l.carrier}${l.overnight ? " · overnight" : ""}`;
 }
-const cityName = (code: string) => AIRPORTS.find((a) => a.code === code)?.name ?? code;
+// City lookups use the loaded dataset via `byCode` / `lookupCity` inside the component.
 
 // --- map backend response -> internal Route shape -----------------------
 /* eslint-disable @typescript-eslint/no-explicit-any */
@@ -144,10 +147,11 @@ function mapApiLeg(l: any): Leg {
     overnight: !!l.overnight,
   };
 }
-function mapApiRoute(r: any, i: number): Route {
+function mapApiRoute(r: any, i: number, byCode: Map<string, Airport>): Route {
   const code = r.city; // engine returns the candidate IATA code as `city`
+  const a = byCode.get(code);
   return {
-    city: cityName(code), code, country: COUNTRY[code] ?? "",
+    city: a?.city ?? code, code, country: a?.country ?? "",
     stayNights: r.stay_nights, total: Math.round(r.total_price),
     savings: Math.round(r.savings), pct: Math.round(r.savings_pct),
     gradient: GRADIENTS[i % GRADIENTS.length],
@@ -193,6 +197,21 @@ export default function Home() {
   const [chatInput, setChatInput] = useState("");
   const [suggested, setSuggested] = useState<City[]>([]);
 
+  // Full airport dataset (loaded from /airports.json; falls back to a small built-in list).
+  const [airports, setAirports] = useState<Airport[]>(FALLBACK_AIRPORTS);
+  useEffect(() => {
+    fetch("/airports.json")
+      .then((r) => r.json())
+      .then((d: Airport[]) => { if (Array.isArray(d) && d.length) setAirports(d); })
+      .catch(() => { /* keep fallback */ });
+  }, []);
+  const byCode = useMemo(() => {
+    const m = new Map<string, Airport>();
+    for (const a of airports) m.set(a.code, a);
+    return m;
+  }, [airports]);
+  const lookupCity = (code: string) => byCode.get(code)?.city ?? code;
+
   const addCity = (code: string) => {
     if (!code || quickSelected.includes(code)) return;
     setQuickSelected([...quickSelected, code]);
@@ -219,7 +238,7 @@ export default function Home() {
       }
       const data = await res.json();
       setBaseline(mapApiBaseline(data, arriveBy));
-      setRoutes((data.routes || []).map(mapApiRoute));
+      setRoutes((data.routes || []).map((r: unknown, i: number) => mapApiRoute(r, i, byCode)));
       setSkipped((data.skipped || []).map((s: { city: string; reason: string }) => ({ city: s.city, reason: s.reason })));
       if (!data.routes?.length) setNote("No stopover beat the direct route for these inputs.");
     } catch (e) {
@@ -269,11 +288,10 @@ export default function Home() {
   }, [routes, nonstopOnly, departAfter7, noOvernight, tab]);
 
   const n = visibleRoutes.length;
-  const airportOptions = AIRPORTS.filter((a) => !quickSelected.includes(a.code));
 
   // shared style fragments
-  const inputCode: React.CSSProperties = { width: 58, fontFamily: "'JetBrains Mono',monospace", fontWeight: 700, fontSize: 22, color: "#16223A", border: "none", background: "transparent", outline: "none", letterSpacing: "0.04em" };
-  const inputSub: React.CSSProperties = { flex: 1, minWidth: 0, fontWeight: 500, fontSize: 13, color: "#5A6577", border: "none", background: "transparent", outline: "none" };
+  const acInput: React.CSSProperties = { width: "100%", fontFamily: "'JetBrains Mono',monospace", fontWeight: 700, fontSize: 20, color: "#16223A", border: "none", background: "transparent", outline: "none", letterSpacing: "0.04em", padding: 0 };
+  const candInput: React.CSSProperties = { width: "100%", fontWeight: 600, fontSize: 13, color: "#16223A", background: "#fff", border: "1px solid rgba(22,34,58,0.16)", borderRadius: 999, padding: "9px 16px", outline: "none" };
   const fieldLabel: React.CSSProperties = { fontSize: 11, fontWeight: 700, letterSpacing: "0.06em", textTransform: "uppercase", color: "#9AA0AB" };
   const field: React.CSSProperties = { display: "flex", flexDirection: "column", gap: 6, padding: "10px 14px", borderRadius: 15, background: "#FBF7EF" };
 
@@ -313,20 +331,18 @@ export default function Home() {
         {/* SEARCH CARD */}
         <div style={{ margin: "42px auto 0", maxWidth: 980, background: "#fff", border: "1px solid rgba(22,34,58,0.08)", borderRadius: 24, boxShadow: "0 24px 60px -24px rgba(22,34,58,0.28),0 4px 14px rgba(22,34,58,0.04)", padding: 14, textAlign: "left" }}>
           <div style={{ display: "grid", gridTemplateColumns: "1.2fr 1.2fr 1fr auto", gap: 10, alignItems: "end" }}>
-            <label style={field}>
+            <div style={field}>
               <span style={fieldLabel}>From</span>
-              <div style={{ display: "flex", alignItems: "baseline", gap: 8 }}>
-                <input value={origin} maxLength={3} onChange={(e) => setOrigin(e.target.value.toUpperCase())} style={inputCode} />
-                <input value={originCity} onChange={(e) => setOriginCity(e.target.value)} style={inputSub} />
-              </div>
-            </label>
-            <label style={field}>
+              <AirportAutocomplete airports={airports} value={origin} placeholder="City or code" inputStyle={acInput}
+                onPick={(a) => { setOrigin(a.code); setOriginCity(a.city); }} />
+              <span style={{ fontSize: 12, color: "#5A6577", fontWeight: 500 }}>{originCity || " "}</span>
+            </div>
+            <div style={field}>
               <span style={fieldLabel}>To</span>
-              <div style={{ display: "flex", alignItems: "baseline", gap: 8 }}>
-                <input value={dest} maxLength={3} onChange={(e) => setDest(e.target.value.toUpperCase())} style={inputCode} />
-                <input value={destCity} onChange={(e) => setDestCity(e.target.value)} style={inputSub} />
-              </div>
-            </label>
+              <AirportAutocomplete airports={airports} value={dest} placeholder="City or code" inputStyle={acInput}
+                onPick={(a) => { setDest(a.code); setDestCity(a.city); }} />
+              <span style={{ fontSize: 12, color: "#5A6577", fontWeight: 500 }}>{destCity || " "}</span>
+            </div>
             <label style={field}>
               <span style={fieldLabel}>Depart</span>
               <input type="date" value={departDate} onChange={(e) => setDepartDate(e.target.value)} style={{ fontWeight: 600, fontSize: 15, color: "#16223A", border: "none", background: "transparent", outline: "none" }} />
@@ -349,14 +365,14 @@ export default function Home() {
               <span style={{ fontSize: 12.5, color: "#9AA0AB", fontWeight: 600 }}>Add airports from the list — {quickSelected.length} selected</span>
             </div>
             <div style={{ display: "flex", alignItems: "center", gap: 10, flexWrap: "wrap" }}>
-              <select value="" onChange={(e) => { addCity(e.target.value); }} style={{ appearance: "none", WebkitAppearance: "none", cursor: "pointer", fontWeight: 600, fontSize: 13, color: "#16223A", background: "#fff", border: "1px solid rgba(22,34,58,0.16)", borderRadius: 999, padding: "9px 16px", outline: "none" }}>
-                <option value="">+ Add an airport…</option>
-                {airportOptions.map((a) => <option key={a.code} value={a.code}>{a.code} — {a.name}</option>)}
-              </select>
+              <div style={{ minWidth: 230 }}>
+                <AirportAutocomplete airports={airports} value="" placeholder="+ Add an airport…" inputStyle={candInput}
+                  exclude={[...quickSelected, origin, dest]} clearOnPick onPick={(a) => addCity(a.code)} />
+              </div>
               {quickSelected.map((code) => (
                 <span key={code} style={{ display: "inline-flex", alignItems: "center", gap: 8, fontWeight: 600, fontSize: 13, padding: "7px 9px 7px 13px", borderRadius: 999, background: "#16223A", color: "#fff" }}>
                   <span style={{ fontFamily: "'JetBrains Mono',monospace", fontWeight: 700, color: "#7FE3C0" }}>{code}</span>
-                  {cityName(code)}
+                  {lookupCity(code)}
                   <button onClick={() => removeCity(code)} style={{ display: "inline-flex", alignItems: "center", justifyContent: "center", width: 18, height: 18, border: "none", cursor: "pointer", borderRadius: "50%", background: "rgba(255,255,255,0.16)", color: "#fff", fontSize: 13, lineHeight: 1, padding: 0 }}>×</button>
                 </span>
               ))}
